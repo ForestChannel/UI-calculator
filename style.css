@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Century Gothic';
+}
+body {
+  background: #222;
+}
+#content {
+  display: grid;
+  width: 720px;
+  height: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background: rgb(189, 189, 189);
+}
+#screen {
+  background: rgb(24, 24, 24);
+  width: auto;
+  height: 300px;
+}
+#numTab {
+  background: rgb(187, 187, 187);
+  width: auto;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-auto-columns: 180px;
+}
+.button {
+  width: 179px;
+  height: 179px;
+  border-top: 1px;
+  border-right: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: rgb(24, 24, 24);
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s;
+}
+.button.zero {
+  width: 359px;
+  grid-column: 1 / 3;
+  background: crimson;
+}
+.button.equ {
+  background: crimson;
+  height: 360px;
+  grid-row: 4/6;
+  grid-column: 4/5;
+}
+.button.act {
+  color: crimson;
+}
+.button:hover {
+  cursor: pointer;
+  background: black;
+  color: crimson;
+}
+#screen {
+  /* display: grid; */
+  color: white;
+  overflow: hidden;
+}
+.exprBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(34, 34, 34, 0.185);
+  z-index: 11;
+}
+.expr {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+  /* background: red; */
+  height: 100px;
+  z-index: 1;
+  width: auto;
+  text-align: right;
+  position: relative;
+}
+#expression {
+  width: 100%;
+  height: 200px;
+  font-size: 96px;
+  right: 0;
+}
+#result {
+  width: 100%;
+  height: 100px;
+  font-size: 48px;
+  color: rgb(151, 151, 151);
+
+  right: 0;
+}

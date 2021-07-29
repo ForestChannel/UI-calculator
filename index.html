@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="screen">
+        <div id="expression" class="exprBlock">
+          <span class="expr">...</span>
+        </div>
+        <div id="result" class="exprBlock"><span class="expr"></span></div>
+      </div>
+      <div id="numTab">
+        <input type="button" onclick="clr()" value="CLR" class="button act" />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="÷"
+          class="button act"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="×"
+          class="button act"
+        />
+        <input type="button" onclick="clrLast()" value="⌫" class="button act" />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="1"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="2"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="3"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="-"
+          class="button act"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="4"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="5"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="6"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="+"
+          class="button act"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="7"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="8"
+          class="button"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="9"
+          class="button"
+        />
+        <input type="button" onclick="result()" value="=" class="button equ" />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="0"
+          class="button zero"
+        />
+        <input
+          type="button"
+          onclick="getAction(this)"
+          value="."
+          class="button"
+        />
+      </div>
+    </div>
+    <script src="logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
+  </body>
+</html>
